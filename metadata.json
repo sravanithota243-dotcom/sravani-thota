@@ -1,0 +1,6 @@
+{
+  "name": "SkinSense",
+  "description": "Smart skin disease detection voice-enabled assistant with image quality preprocessing, longitudinal lesion comparison, PDF reporting, and multilingual audio guidance.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,203 @@
+{
+  "users": [
+    {
+      "id": "usr_demo_skinsense",
+      "email": "demo@skinsense.health",
+      "fullName": "Dr. Elena Vance (Demo Patient)",
+      "passwordHash": "46f61b43a4bcec85d8af730b699bb5cb3ce5c67695f484c381238fb0d69256df994377eb52a01ea32541c7f75c1a1c6f1830ac057e94fb45f37a81f2bf993c8c",
+      "passwordSalt": "1307ba3ab413af72710447d660cb0c12",
+      "createdAt": "2026-10-30T14:48:17.356Z"
+    }
+  ],
+  "sessions": [
+    {
+      "token": "830f15a595aafdee74c1edc735881e8922ff486f8bc9c180c5b708f0c91949d8",
+      "userId": "usr_demo_skinsense",
+      "expiresAt": "2026-11-27T14:48:20.935Z"
+    },
+    {
+      "token": "208c10163733689219a09cf4b3e22fed4a15e5b7841b7ddc20a6a56d4b6e7fd0",
+      "userId": "usr_demo_skinsense",
+      "expiresAt": "2026-11-27T15:08:28.904Z"
+    }
+  ],
+  "cases": [
+    {
+      "id": "case_forearm_01",
+      "userId": "usr_demo_skinsense",
+      "title": "Left Dorsal Forearm Lesion",
+      "bodyLocation": "Left Forearm",
+      "shareToken": "ss-long-forearm-8421",
+      "shareEnabled": true,
+      "createdAt": "2026-10-30T14:48:17.356Z",
+      "updatedAt": "2026-11-18T14:48:17.356Z"
+    }
+  ],
+  "scans": [
+    {
+      "id": "scan_baseline_01",
+      "userId": "usr_demo_skinsense",
+      "caseId": "case_forearm_01",
+      "caseTitle": "Left Dorsal Forearm Lesion",
+      "bodyLocation": "Left Forearm",
+      "symptoms": "Asymptomatic flat pigmented spot, ~4 mm diameter, noticed during annual check.",
+      "imageDataUrl": "/src/assets/images/sample_lesion_baseline_1795185793387.jpg",
+      "qualityMetrics": {
+        "width": 1024,
+        "height": 1024,
+        "sharpnessScore": 91,
+        "brightnessScore": 78,
+        "contrastScore": 74,
+        "overallScore": 86,
+        "status": "pass",
+        "problemCheckingMessage": "Quality verified: Crisp macro focus, balanced illumination, and clear perilesional contrast.",
+        "preprocessingApplied": [
+          "White-Balance Normalization",
+          "Centered ROI Framing"
+        ]
+      },
+      "analysis": {
+        "primaryCondition": "Benign Junctional Melanocytic Nevus",
+        "confidenceScore": 88,
+        "uncertaintyMargin": 5,
+        "severityLevel": "routine",
+        "problemCheckingMessage": "Routine Monitoring: Borders appear symmetric and uniform. No immediate high-risk morphological red flags detected; continue periodic photographic tracking.",
+        "redFlagChecklist": [
+          "No rapid asymmetric expansion observed",
+          "Uniform light-brown pigmentation without dark satellite nodules",
+          "No surface ulceration or spontaneous bleeding"
+        ],
+        "clinicalSummary": "Well-circumscribed, symmetrical pigmented macule (~4 mm) exhibiting homogeneous light-brown pigment distribution and regular borders consistent with a benign nevus.",
+        "morphology": {
+          "asymmetry": "Symmetric across both perpendicular axes",
+          "borderRegularity": "Sharp, smooth, regular circumference",
+          "colorVariation": "Uniform tan-brown pigmentation",
+          "erythemaLevel": "None visible in perilesional skin",
+          "surfaceTexture": "Smooth, intact skin markings"
+        },
+        "differentials": [
+          {
+            "name": "Benign Melanocytic Nevus",
+            "probability": 88,
+            "notes": "Uniform shape and color distribution."
+          },
+          {
+            "name": "Solar Lentigo",
+            "probability": 9,
+            "notes": "Flat sun-exposed macule with regular edges."
+          },
+          {
+            "name": "Early Seborrheic Keratosis",
+            "probability": 3,
+            "notes": "Minimal surface verrucous texture."
+          }
+        ],
+        "recommendations": [
+          "Archive this baseline image and capture a follow-up scan in 4 to 8 weeks.",
+          "Apply broad-spectrum SPF 30+ sunscreen to the left forearm daily.",
+          "Consult a board-certified dermatologist if rapid darkening, itching, or diameter growth occurs."
+        ],
+        "voiceSummary": "Your baseline scan shows a uniform, well-bordered spot consistent with a benign melanocytic nevus at 88 percent confidence. No urgent red flags were found; routine monitoring is recommended.",
+        "languageCode": "en"
+      },
+      "createdAt": "2026-10-30T14:48:17.356Z"
+    },
+    {
+      "id": "scan_followup_02",
+      "userId": "usr_demo_skinsense",
+      "caseId": "case_forearm_01",
+      "caseTitle": "Left Dorsal Forearm Lesion",
+      "bodyLocation": "Left Forearm",
+      "symptoms": "Mild localized redness and slight dry scaling noticed over the past 5 days.",
+      "imageDataUrl": "/src/assets/images/sample_lesion_followup_1795185793686.jpg",
+      "qualityMetrics": {
+        "width": 1024,
+        "height": 1024,
+        "sharpnessScore": 89,
+        "brightnessScore": 80,
+        "contrastScore": 79,
+        "overallScore": 85,
+        "status": "pass",
+        "problemCheckingMessage": "Quality verified: Reference millimeter scale detected, clear epidermal surface detail, zero motion blur.",
+        "preprocessingApplied": [
+          "White-Balance Normalization",
+          "Glare Reduction Contrast Curve"
+        ]
+      },
+      "analysis": {
+        "primaryCondition": "Nummular Eczema / Localized Tinea Corporis",
+        "confidenceScore": 82,
+        "uncertaintyMargin": 6,
+        "severityLevel": "monitor",
+        "problemCheckingMessage": "Medical Review Recommended: Active erythema and peripheral scaling detected compared to typical benign spots. Schedule a non-urgent dermatology or primary care evaluation for targeted topical management.",
+        "redFlagChecklist": [
+          "Peripheral dry scaling and erythematous rim present",
+          "Mild localized inflammatory redness (~18 mm plaque)",
+          "No deep ulceration or necrotic crusting observed"
+        ],
+        "clinicalSummary": "Coin-shaped erythematous plaque with fine peripheral scaling and mildly accentuated border. Differential includes nummular dermatitis and superficial fungal tinea corporis.",
+        "morphology": {
+          "asymmetry": "Mildly oval configuration",
+          "borderRegularity": "Slightly raised erythematous rim with scale",
+          "colorVariation": "Pink-red erythema with subtle tan border",
+          "erythemaLevel": "Moderate localized perilesional erythema",
+          "surfaceTexture": "Fine dry epidermal desquamation"
+        },
+        "differentials": [
+          {
+            "name": "Nummular Dermatitis (Eczema)",
+            "probability": 48,
+            "notes": "Annular erythematous plaque with surface dryness."
+          },
+          {
+            "name": "Tinea Corporis",
+            "probability": 34,
+            "notes": "Active scaling border with mild central clearing."
+          },
+          {
+            "name": "Contact Dermatitis",
+            "probability": 18,
+            "notes": "Localized inflammatory reaction."
+          }
+        ],
+        "recommendations": [
+          "Avoid scratching or applying unprescribed steroid creams until evaluated, as steroids can mask fungal infections.",
+          "Keep the area clean and dry; use fragrance-free gentle cleansers.",
+          "Share your longitudinal comparison report with a clinician within 1 to 2 weeks."
+        ],
+        "voiceSummary": "This follow-up scan shows moderate redness and fine scaling with an 82 percent confidence rating, likely nummular dermatitis or superficial tinea. A non-urgent clinical visit is recommended for proper confirmation.",
+        "languageCode": "en"
+      },
+      "createdAt": "2026-11-18T14:48:17.356Z"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "cmp_forearm_01",
+      "userId": "usr_demo_skinsense",
+      "caseId": "case_forearm_01",
+      "caseTitle": "Left Dorsal Forearm Lesion",
+      "previousScanId": "scan_baseline_01",
+      "currentScanId": "scan_followup_02",
+      "progressionStatus": "evolving",
+      "confidenceScore": 87,
+      "problemCheckingMessage": "Interval Change Detected: Noticeable shift from flat tan macule to an erythematous, mildly scaling plaque over 19 days. Clinical evaluation is advised to differentiate inflammatory dermatitis from superficial infection.",
+      "changeSummary": "Over the 19-day interval, the lesion transitioned from a uniform 4 mm tan macule to a larger erythematous patch displaying peripheral scaling and active border inflammation.",
+      "visualDeltas": {
+        "sizeAndArea": "Apparent diameter increased from ~4 mm baseline to ~16–18 mm patch.",
+        "borderEvolution": "Shifted from smooth flat margin to mildly raised scaling rim.",
+        "pigmentationShift": "Changed from uniform light brown to pink-red erythema.",
+        "inflammationChange": "Increased localized erythema and epidermal dryness."
+      },
+      "clinicalNextSteps": [
+        "Book a dermatology or primary care appointment and bring the exported PDF longitudinal report.",
+        "Avoid fragranced lotions and harsh soaps on the left forearm.",
+        "Capture another photo in 7 days if treatment is initiated to track resolution."
+      ],
+      "voiceSummary": "Comparing your current scan against the baseline from 19 days ago reveals an evolving inflammatory change with increased redness and peripheral scaling. Please share this longitudinal report with a healthcare provider.",
+      "languageCode": "en",
+      "createdAt": "2026-11-18T14:48:17.356Z"
+    }
+  ],
+  "reminders": []
+}
